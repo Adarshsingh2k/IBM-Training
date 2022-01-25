@@ -1,0 +1,27 @@
+body{
+    background-color: aquamarine;
+    text-align:center;
+}
+.parent{
+    border: 5px solid black;
+    color: aliceblue;
+    font-size: 40px;
+    background-color: red;
+    height:50vh;
+}
+.ptxt{
+    border-bottom: 5px dotted black;
+   
+}
+.child1{
+    font-size: 0.5em;
+    margin-top: 2%;
+    background-color: brown;
+    width: 50vw;
+    height: 50%;
+    margin-left: 25%;
+    border: 3px dotted white;
+}
+.child2{
+    font-size: 2rem;
+}
