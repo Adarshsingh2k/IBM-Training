@@ -30,3 +30,13 @@ nav{
 span{
     color: brown;
 }
+nav h2:hover{
+   /*text-decoration:underline;
+   text-decoration-color: skyblue;*/
+   text-shadow: 2px 2px #ff0055;
+   border-bottom: 2px solid skyblue;
+}
+nav span:hover{
+    text-shadow: 2px 2px #ff0055;
+    color :white;
+}
