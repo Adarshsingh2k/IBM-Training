@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,7 +10,7 @@
   
   body {
     margin: 0px;
-    font-family: 'segoe ui';
+    font-size: 18px;
   }
   header{
       background-image: url(./images/desktop/image-header.jpg);
@@ -31,6 +32,9 @@
    
     display: flex;
     justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
   }
   
   .nav > .nav-header {
@@ -40,6 +44,7 @@
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
+    font-weight: 900;
     color: black;
     padding: 10px 10px 10px 10px;
   }
@@ -147,6 +152,12 @@
       justify-content: center;
       flex-direction: column;
       margin-top: 5%;
+      
+  }
+  .hed-div h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 5rem;
   }
 
 
@@ -154,7 +165,7 @@
       display:grid;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      border: 1px solid red;
+      /* border: 1px solid red; */
     grid-template-areas: 
       "part11 part12"
       "part21 part22"
@@ -169,6 +180,13 @@
     font-weight: 800;
     font-size: 2rem;
   }
+
+  .sec1 .btm-hd{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
   .sec1 p{
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
@@ -180,13 +198,13 @@
       border: 1px solid blue;
       /* grid-area: part11; */
       
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
       
   }
   
   .part11{
     grid-area: part11;
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     padding: 27% 20%;
   }
   .part12{
@@ -202,7 +220,7 @@
   }
   .part22{
     grid-area: part22;
-    border: 10px solid black;
+    /* border: 10px solid black; */
     padding: 27% 20%;
     
 
@@ -228,7 +246,7 @@
 
   .part32{
     grid-area: part32;
-    border: 10px solid green;
+    /* border: 10px solid green; */
     position: relative;
 
   }
@@ -260,7 +278,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.6fr 2fr;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   grid-template-areas: 
     "ptmn ptmn ptmn"
     "pt21 pt22 pt23"
@@ -274,20 +292,37 @@
 }
 .ptmn{
     grid-area: ptmn;
-    border: 10px solid red;
+    /* border: 10px solid red; */
     text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: hsl(210, 4%, 67%);
+    
 }
 .pt21{
     grid-area: pt21;
-    border: 5px dotted orange;
+    /* border: 5px dotted orange; */
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
 }
 .pt22{
     grid-area: pt22;
-    border: 5px dotted brown;
+    /* border: 5px dotted brown; */
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
 }
 .pt23{
     grid-area: pt23;
-    border: 5px dotted black;
+    /* border: 5px dotted black; */
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+.sec2 strong{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 1em;
+
 }
 
 
@@ -322,9 +357,9 @@ footer{
     display: flex;
     /* width: 100%; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
    
-    border: 10px solid rebeccapurple;
+    /* border: 10px solid rebeccapurple; */
     background-color: hsl(143, 75%, 68%);
     height: 70vh;
     flex-direction: column;
@@ -332,6 +367,10 @@ footer{
 }
 
 .fot-h{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    color: hsl(168, 53%, 22%);
+    
     font-size: 5rem;
     align-self: center;
 }
@@ -339,12 +378,18 @@ footer{
 .fot-m{
     display: flex;
     flex-direction: row;
+    
     column-gap: 15%;
-    font-size: 2rem;
-    color: hsl(168, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+   justify-content: space-evenly;
+    color: hsl(168, 42%, 35%);
     
 }
-.fot-m h5:hover{
+.hh{
+    font-size: 1.5rem;
+}
+.hh:hover{
     color: #eee;
 }
 
@@ -352,6 +397,8 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 15%;
+    color: hsl(168, 34%, 41%);
+    justify-content: space-evenly;
 }
 .fot-i i{
     font-size: 3rem;
