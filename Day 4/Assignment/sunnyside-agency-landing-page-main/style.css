@@ -1,5 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-size: 18px;
   }
   
   body {
@@ -159,6 +164,16 @@
       /* margin-top: 10%; */
        
   }
+  .sec1 .hd{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  .sec1 p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+  }
   .sec1 .part1{
       /* display: grid;
       grid-template-columns: 1fr 1fr;
@@ -168,13 +183,11 @@
       border: 1px solid blue;
       
   }
-  .part1 > img{
-      /* width: 100%;
-      grid-area: part12; */
-  }
+  
   .part11{
     grid-area: part11;
     border: 10px solid blue;
+    padding: 27% 20%;
   }
   .part12{
     grid-area: part12;
@@ -190,6 +203,7 @@
   .part22{
     grid-area: part22;
     border: 10px solid black;
+    padding: 27% 20%;
     
 
   }
