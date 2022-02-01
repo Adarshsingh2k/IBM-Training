@@ -50,9 +50,12 @@ parEl.replaceChild(newEl,parEl.firstElementChild);
 parEl.removeChild(parEl.lastElementChild);
 
 // Append child
-
 var newEl2= document.createElement("p");
 newEl2.textContent="Appendede element";
 console.log(newEl2);
 parEl.appendChild(newEl2);
+
+// Geting sibblings of elements
+var sib1=parEl.lastElementChild.previousElementSibling;
+console.log(sib1);
 
