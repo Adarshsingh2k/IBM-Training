@@ -17,4 +17,4 @@ console.log(nu);
 var btn3=document.getElementById("btn3");
 btn3.addEventListener("mouseover",function(){
     document.body.style.backgroundColor="orange";
-})
+});
