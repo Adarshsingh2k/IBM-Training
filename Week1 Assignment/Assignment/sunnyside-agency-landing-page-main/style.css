@@ -406,3 +406,89 @@ footer{
 i:hover{
     color: #eee;
 }
+
+@media (max-width: 400px){
+  .hed-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1%;
+    
+}
+
+  .hed-div h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  .hed-div img{
+    height: 10%;
+    width: 5%;
+  }
+
+  .sec1{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* border: 1px solid red; */
+  grid-template-areas: 
+    "part11"
+    "part12"
+    "part21"
+    "part22"
+    "part31" 
+    "part32"
+    ; 
+   
+    /* margin-top: 10%; */
+     
+}
+
+.sec2{
+  display:grid;
+ 
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 1fr;
+  /* height: auto; */
+  /* border: 1px solid red; */
+grid-template-areas: 
+  "ptmn" 
+  "pt21" 
+  "pt22" 
+  "pt23"
+  ; 
+  /* padding: 5%; */
+  text-align: center;
+  justify-content: center;
+ 
+  /* margin-top: 10%; */
+   
+}
+
+.sec3{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 0.6fr 0.6fr 0.6fr;
+  grid-template-areas: "p31" 
+  "p32" 
+  "p33" 
+  "p34";
+}
+
+.fot-h{
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  color: hsl(168, 53%, 22%);
+  
+  font-size: 3rem;
+  align-self: center;
+}
+.hh{
+  font-size: 1em;
+}
+.fot-i i{
+  font-size: 1rem;
+}
+}

@@ -26,3 +26,7 @@ console.log(arr2);
 let arrSplice=arr2.splice(1,5,10,11,12);
 console.log("Spliced Array"+arrSplice);
 console.log(arr2);
+
+// split funnction of Stings
+let str1="Hello Adarsh, how are you";
+console.log(str1.split(",",3));
