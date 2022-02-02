@@ -42,3 +42,34 @@ console.log(arr2);
 let arrSplice=arr2.splice(1,5,10,11,12);
 console.log("Spliced Array"+arrSplice);
 console.log(arr2);
+
+
+// Join mETHOD
+let str2="My name is adarsh singh";
+let str2spl=str2.split(" ");
+console.log(str2spl);
+let joinstr=str2spl.join(" and ");
+console.log(joinstr);
+
+
+// Map method
+let arrOne=[1,2,3,4,5,6,7,8,9];
+let arrTwo=arrOne.map((item)=>{
+return item*2;
+});
+console.log(arrTwo);
+
+// Filter method
+let arrOne=[1,2,3,4,5,6,7,8,9];
+let arrTwo=arrOne.filter((item)=>{
+return item%2===0;
+});
+console.log(arrTwo);
+
+// Reduce Method
+let arrOne=[1,2,3,4,5,6,7,8,9];
+let arrTwo=arrOne.reduce((item)=>{
+return item%2===0;
+});
+console.log(arrTwo);
+
