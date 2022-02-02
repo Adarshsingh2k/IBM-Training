@@ -19,3 +19,4 @@ stud.class=10;
 console.log(stud);
 delete stud.class;
 console.log(stud);
+

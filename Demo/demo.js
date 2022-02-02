@@ -73,3 +73,36 @@ return item%2===0;
 });
 console.log(arrTwo);
 
+
+// Objects 
+const stud={
+    firstName:"adarsh",
+    lastName:"Singh",
+    age: 20
+};
+
+// to get keys=> key
+// to get values use student[key]
+for(key in stud){
+    console.log(key);
+    
+}
+for(key in stud){
+    console.log(stud[key]);
+    
+}
+
+
+// rest Parameters
+function showRest(a,b,...args){
+    console.log(a);
+    console.log(b);
+    console.log(args);
+    
+}
+showRest(1,2,3,4,5,6);
+
+// spread operator
+let arrOne=[1,2,3];
+let arrTwo=[4,5,...arrOne,6];
+console.log(arrTwo);
