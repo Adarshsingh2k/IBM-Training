@@ -106,3 +106,19 @@ showRest(1,2,3,4,5,6);
 let arrOne=[1,2,3];
 let arrTwo=[4,5,...arrOne,6];
 console.log(arrTwo);
+
+//Asynchronous JS
+// 1.SetTimeOut()
+setTimeout(()=>{
+    console.log("hello Adarsh");
+}, 4000);
+
+//2. Promises
+let x=1;
+let prom= new Promise((resolve,reject)=>{
+    if(x===1){
+        resolve("Promise done");
+    }
+    else reject("failed");
+})
+console.log(prom);
