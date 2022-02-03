@@ -132,3 +132,17 @@ prom.then((result)=>{
 });
 console.log(prom);
 
+// Async / Await
+let pro=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("Promise is reolved");
+    },4000);
+});
+
+async function fun(){
+    let result= await pro; // basically await waits til promise is resolved
+    console.log(result);
+    console.log("hello");
+}
+
+fun();
