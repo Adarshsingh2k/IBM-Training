@@ -146,3 +146,32 @@ async function fun(){
 }
 
 fun();
+
+
+
+//////////////////// FETCH ////////////////////////////////////////////////
+
+let data= fetch("https://jsonplaceholder.typicode.com/todos/1")
+.then( response=> response.json())
+.then(json=>console.log(json));
+console.log(data);
+
+
+let data= fetch("https://jsonplaceholder.typicode.com/users");
+async function f1(){
+    let res=await data.then((result)=> result.json());
+    res.map((i)=>{
+        console.log(i["name"]);
+    });
+}
+f1();
+
+/// dot notation
+let data= fetch("https://jsonplaceholder.typicode.com/users");
+async function f1(){
+    let res=await data.then((result)=> result.json());
+    res.map((i)=>{
+        console.log(i.name);
+    });
+}
+f1();
