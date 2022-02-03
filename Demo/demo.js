@@ -114,11 +114,21 @@ setTimeout(()=>{
 }, 4000);
 
 //2. Promises
-let x=1;
+let x=5;
 let prom= new Promise((resolve,reject)=>{
     if(x===1){
         resolve("Promise done");
     }
     else reject("failed");
+});
+prom.then((result)=>{
+    console.log(result);
 })
+.catch((result)=>{
+    console.log(result);
+})
+.finally(()=>{
+    console.log("Finally done");
+});
 console.log(prom);
+
