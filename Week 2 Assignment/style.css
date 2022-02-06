@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 3.5rem;
+
+
+}
+
+h1::before {
+   
+
+    content: url("https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/2x/external-time-is-money-investment-kiranshastry-lineal-color-kiranshastry.png");
+}
+
+.tSp {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Rowdies', cursive;
+   
+
+}
+
+form {
+    background-color: #8ef4c1ab;
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+#task {
+    width: 60%;
+    height: 50%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5%;
+}
+
+#add {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    border: none;
+    width: 10%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 5px;
+    margin-left: 5%;
+    font-family: 'Rowdies', cursive;
+
+}
+
+main {
+    /* border: 5px solid red; */
+    width: 75vw;
+    margin: 0 auto;
+    background-color: #E3BEC6;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.head {
+    font-family: 'Rowdies', cursive;
+    font-size: 2rem;
+
+}
+
+#ul {
+    display: grid;
+    gap: 25px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#liPrt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+.text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    border: none;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 5px;
+
+}
+
+.delBtn {
+    /* display: inline; */
+    background-color: #FF0075;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Rowdies', cursive;
+
+}
+
+.editBtn {
+    background-color: #2bb6aa;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Rowdies', cursive;
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        color: white;
+        font-size: 2.5rem;
+    
+    
+    }
+    h1::before {
+   
+      
+        content: none;
+    }
+    #add {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        border: none;
+        width: 20%;
+        height: 50%;
+        background-color: rgba(255, 255, 255, 0.582);
+        border-radius: 5px;
+        margin-left: 5%;
+        font-family: 'Rowdies', cursive;
+    
+    }
+
+    .delBtn {
+        /* display: inline; */
+        background-color: #FF0075;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        width:50px;
+        height: 50px;
+        font-family: 'Rowdies', cursive;
+    
+    }
+    
+    .editBtn {
+        background-color: #2bb6aa;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        font-family: 'Rowdies', cursive;
+    
+    }
+    .text {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        border: none;
+        width: 65%;
+        background-color: rgba(255, 255, 255, 0.582);
+        border-radius: 5px;
+    
+    }
+    .head {
+        font-family: 'Rowdies', cursive;
+        font-size: 1.5rem;
+    
+    }
+    main {
+        /* border: 5px solid red; */
+        width: 95vw;
+        margin: 0 auto;
+        background-color: #E3BEC6;
+        border-radius: 10px;
+        padding: 1%;
+    }
+  }
