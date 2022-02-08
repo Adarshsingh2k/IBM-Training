@@ -18,6 +18,7 @@ let task = document.getElementById("task");
 document.getElementById("add").addEventListener('click', (e) => {
     e.preventDefault();
     console.log(task.value);
+
     let liPrt = document.createElement("div");
     liPrt.setAttribute("id", "liPrt");
 
@@ -55,6 +56,7 @@ document.getElementById("add").addEventListener('click', (e) => {
     console.log(liPrt);
 
     ul.appendChild(liPrt);
+    
 
 
 
@@ -86,6 +88,7 @@ document.getElementById("add").addEventListener('click', (e) => {
             liIn.setAttribute("readonly","readonly");
         }
     });
+    task.value=" ";
 
 });
 

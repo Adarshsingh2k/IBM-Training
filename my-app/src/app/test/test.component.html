@@ -1,0 +1,22 @@
+<p>Counter</p>
+<div class="cont">
+    <button (click)="incCt()" >+</button>
+<div>
+   <h4>{{retCnt()}}</h4> 
+</div>
+
+<button (click)="decCt()" >-</button>
+
+<br>
+
+
+</div>
+
+<h1>Task 2</h1>
+<input type="text" name="" id="state" [readonly]=state>
+<button (click)="stateChange()">State Change</button>
+
+<h1>Task 3</h1>
+<div [ngStyle]="{'background-color':col=='fill'?'yellow':'orange'}" id="bgChng">
+    <h4>How Are you ??</h4>
+</div>
