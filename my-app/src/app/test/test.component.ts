@@ -36,4 +36,13 @@ export class TestComponent  {
 
   // task 3
   col='fill';
+
+  //ngFor
+  num=[1,2,3,4];
+
+  //ng if
+  show=true;
+
+  //switch
+  lo="red";
 }

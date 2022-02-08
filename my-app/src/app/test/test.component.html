@@ -20,3 +20,46 @@
 <div [ngStyle]="{'background-color':col=='fill'?'yellow':'orange'}" id="bgChng">
     <h4>How Are you ??</h4>
 </div>
+
+<h1>ngFor</h1>
+<h2 *ngFor="let i of num">{{i}}</h2>
+<h1>ngIf</h1>
+<h3 *ngIf="show">hello</h3>
+
+<br>
+
+<h1>if else</h1>
+<h3 *ngIf="!show else elseBlock">hello</h3>
+<ng-template #elseBlock>
+    <h3>Hi</h3>
+</ng-template>
+
+<br>
+
+<h1>if with then and else</h1>
+<h3 *ngIf="show then thenBlock else elseBlock">hello</h3>
+<ng-template #thenBlock>
+    <h3>Tata</h3>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h3>Hi</h3>
+</ng-template>
+
+
+<hr>
+
+<h1>Switch</h1>
+<div [ngSwitch]="lo">
+    <div *ngSwitchCase="'red'">Red</div>
+    <div *ngSwitchCase="'yellow'">Yellow</div>
+    <div *ngSwitchCase="'orange'">Orange</div>
+
+
+    <div *ngSwitchDefault>white</div>
+</div>
+
+<h1>pipes</h1>
+<h3>{{'ADARSHSINGH2k@gmail.com' | lowercase}}</h3>
+<h3>{{'adarsh singh' | titlecase}}</h3>
+<h3>{{'123' | currency}}</h3>
