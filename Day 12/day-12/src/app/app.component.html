@@ -1,0 +1,24 @@
+<h1>DAY  12</h1>
+<hr>
+<h1>Task 1</h1>
+<h2>ngFor</h2>
+<div *ngFor="let item of list">
+  <h1 *ngIf="item=='Adarsh' else elseBlock ">
+   present
+  </h1>
+  <ng-template #elseBlock >
+    <h3>Not present</h3>
+  </ng-template> 
+
+
+  
+
+</div>
+<hr>
+  <h2>Chaining pipes</h2>
+  <h3>{{start |date: 'long'| uppercase}}</h3>
+
+
+  <br>
+  <app-login></app-login>
+  <app-test-component></app-test-component>

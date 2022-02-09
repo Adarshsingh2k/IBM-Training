@@ -1,0 +1,22 @@
+<hr>
+<p>Services</p>
+<br>
+<h1>Populating Tables using Services</h1>
+<h1>{{objData}}</h1>
+
+<table [ngStyle]="{'width': '100%','text-align':'center','border':'1px solid black'}">
+    <thead>
+        <tr>
+            <th [ngStyle]="{'border':'1px solid black'}">Name</th>
+            <th [ngStyle]="{'border':'1px solid black'}">School</th>
+            <th [ngStyle]="{'border':'1px solid black'}">Year of Passing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of objData">
+            <td [ngStyle]="{'border':'1px solid black'}">{{i.fName}}</td>
+            <td [ngStyle]="{'border':'1px solid black'}">{{i.school}}</td>
+            <td [ngStyle]="{'border':'1px solid black'}">{{i.yop}}</td>
+        </tr>
+    </tbody>
+</table>
