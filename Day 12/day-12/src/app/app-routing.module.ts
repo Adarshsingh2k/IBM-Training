@@ -4,12 +4,15 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login/login.component';
+import { TestComponentComponent } from './test-component/test-component.component';
 
-const routes: Routes = [{path:'home',component:HomeComponent},{
+const routes: Routes = [{path:"", redirectTo:'/main',pathMatch:'full'},
+  {path:'home',component:HomeComponent},{
   path:'about',component:AboutComponent
 },
 {path:'contact',component:ContactComponent},
-{path:'login',component:LoginComponent}];
+{path:'login',component:LoginComponent},
+{path:'main',component:TestComponentComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
