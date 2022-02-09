@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login/login.component';
 import { ProvideDataService } from './provide-data.service';
 import { TestComponentComponent } from './test-component/test-component.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TestComponentComponent
+    TestComponentComponent,
+    HomeComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
