@@ -12,7 +12,8 @@ const routes: Routes = [{path:"", redirectTo:'/main',pathMatch:'full'},
 },
 {path:'contact',component:ContactComponent},
 {path:'login',component:LoginComponent},
-{path:'main',component:TestComponentComponent}];
+{path:'main',component:TestComponentComponent},
+{path:'**',component:TestComponentComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
