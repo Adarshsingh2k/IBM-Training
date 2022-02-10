@@ -6,6 +6,7 @@ import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 
 import { RedirectComponent } from './redirect/redirect.component';
+import { RtcComponent } from './rtc/rtc.component';
 
 
 
@@ -14,9 +15,11 @@ const routes: Routes = [{path:'',redirectTo:'/redirect',pathMatch:'full'},
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
+  {path:'rtc',component:RtcComponent},
   
   
-  {path:'redirect',component:RedirectComponent},{path:'**',component:ErrorComponent},
+  {path:'redirect',component:RedirectComponent},
+  {path:'**',component:ErrorComponent},
   ];
 
 @NgModule({

@@ -1,5 +1,14 @@
-<form action="" #logIn="ngForm" (ngSubmit)="signIn(logIn)">
+<div class="container p-5">
+<form action="" #logIn="ngForm" (ngSubmit)="signIn(logIn)" >
 
-    <input type="text" name="name" id="" placeholder="Full Name*" required maxlength="7" ngModel>
-    <button [disabled]="logIn.invalid">SignIn</button>
+    <input type="text" name="name" id="" placeholder="Full Name*" class="form-control w-50 ms-auto me-auto" required minlength="5" ngModel>
+    <br>
+    <input type="password" name="password" placeholder="Password*" class="form-control w-50 ms-auto me-auto" required minlength="8" ngModel>
+    <br>
+    <input type="email" name="email" id="" placeholder="johnDoe@xhy.com*" class="form-control w-50 ms-auto me-auto" required email>
+    <br>
+    <button class="form-control w-25 bg-success text-white ms-auto me-auto" [disabled]="logIn.invalid">SignIn</button>
 </form>
+
+</div>
+
