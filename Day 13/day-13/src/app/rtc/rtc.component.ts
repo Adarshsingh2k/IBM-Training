@@ -11,5 +11,8 @@ export class RtcComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  signIn(logIn:any){
+    console.log(logIn);
+  }
 
 }

@@ -1,1 +1,5 @@
-<p>rtc works!</p>
+<form action="" #logIn="ngForm" (ngSubmit)="signIn(logIn)">
+
+    <input type="text" name="name" id="" placeholder="Full Name*" required maxlength="7" ngModel>
+    <button [disabled]="logIn.invalid">SignIn</button>
+</form>

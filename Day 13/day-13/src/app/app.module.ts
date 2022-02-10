@@ -13,6 +13,7 @@ import { ErrorComponent } from './error/error.component';
 import { LogoComponent } from './logo/logo.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { RtcComponent } from './rtc/rtc.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { RtcComponent } from './rtc/rtc.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
