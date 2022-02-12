@@ -1,0 +1,25 @@
+<form action="" [formGroup]="logIn" (ngSubmit)="onSubmit()">
+    <label for="">First Name</label>
+    <input type="text" formControlName="fName" required>
+     <small *ngIf="name.invalid ">Error</small>  
+    <br>
+    <label for="">Last Name</label>
+    <input type="text" formControlName="lName">
+    <br>
+    <label for="">Age</label>
+    <input type="text" formControlName="age">
+    <br>
+    <div formGroupName="address">
+        <h4>Address</h4>
+            <label for="">State</label>
+            <input type="text" formControlName="state">
+            <br>
+            <label for="">Street</label>
+            <input type="text" formControlName="street">
+            <br>
+    </div>
+    
+     <button type="submit" [disabled]="!logIn.valid || logIn.untouched">Submit</button> 
+    <!-- <button type="submit" >Submit</button> -->
+    <p *ngIf="logIn.touched ">Form Status: {{logIn.status}}</p>
+</form>

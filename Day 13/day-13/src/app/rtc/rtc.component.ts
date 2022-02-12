@@ -14,5 +14,6 @@ export class RtcComponent implements OnInit {
   signIn(logIn:any){
     console.log(logIn);
   }
+  fname:string='';
 
 }
