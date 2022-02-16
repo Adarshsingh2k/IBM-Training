@@ -1,0 +1,17 @@
+.parent{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+     "a b";
+     border: 2px solid black;
+}
+
+.a{
+    grid-area: a;
+    border: 2px dotted red;
+}
+.b{
+    grid-area: b;
+    border: 2px solid blue;
+}
