@@ -1,0 +1,12 @@
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    
+    border-radius: 10px;
+}
+.one-1{
+    display: flex;
+    justify-content: space-around;
+}
