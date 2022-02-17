@@ -3,6 +3,7 @@ import Task1 from './components/Task1';
 import Task2 from './components/Task2';
 import Task3 from './components/Task3';
 import './App.css';
+import Tweets from './components/twitter/Tweets';
 
 const App = () => {
     const [count,setCount]=useState(0);
@@ -44,6 +45,8 @@ const App = () => {
     
     
         </div>
+
+        <Tweets></Tweets>
         
     </>
   )
